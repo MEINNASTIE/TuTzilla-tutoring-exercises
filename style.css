@@ -1,0 +1,119 @@
+/* BASE */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 20px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+
+/* Different position schemes */ 
+
+.positioning {
+    background-color: aliceblue;
+    height: 1000px;
+}
+
+.static {
+    position: static;
+    width: 160px;
+    height: 160px;
+    background-color: cadetblue;   
+}
+
+.relative {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: coral;
+    top: 0;
+    left: 550px;
+}
+
+.absolute {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: violet;
+    top: 0;
+    right: 40px;
+}
+
+.fixed {
+    position: fixed;
+    width: 160px;
+    height: 160px;
+    background-color: turquoise;
+    left: 100px;
+}
+
+.sticky {
+    position: sticky;
+    width: 160px;
+    height: 160px;
+    background-color: springgreen;
+    left: 800px;
+    top: 400px;
+}
+
+/* Grid play field */
+
+.grid {
+    background-color: aliceblue;
+    margin-top: 10px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    position: relative;
+    width: 100%;
+}
+
+.grid div {
+    width: 160px;
+    height: 160px;
+    background-color:cornflowerblue;
+}
+
+/* Flex play field */
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.flexbox div {
+    width: 160px;
+    height: 160px;
+    background-color: chocolate;
+}
